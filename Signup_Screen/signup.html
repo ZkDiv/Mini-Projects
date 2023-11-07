@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <a href="#" title="logo"><img class="logo" src="images/logo.png" alt="Logo"></a>        
+            <form class="my-form">
+                <div class="login-welcome-row"><h1>Create your account &#x1F44F;</h1></div>
+
+                <!--LOGIN COM REDES SOCIAIS-->
+                <div class="socials-row">
+                    <a href="#" title="Use Google">
+                        <img src="images/google.png" alt="Google">Sign up with Google
+                    </a>
+                    <a href="#" title="Use Apple"><img src="images/apple.png" alt="Apple">Sign up with Apple</a>
+                </div>
+
+                <!--DIVISOR-->
+                <div class="divider">
+                    <div class="divider-line"></div>Or<div class="divider-line"></div>
+                </div>
+
+                <!--INPUTS DE EMAIL E SENHA-->
+                <div class="text-field">
+                    <label>
+                        <input type="email" id="email" name="email" autocomplete="off" placeholder="Your Email"
+                        required>
+                        <!--    svg icon    -->
+                    </label>
+                </div>
+                <div class="text-field">
+                    <label for="password">Password:
+                        <input id="password" type="password" name="password" placeholder="Your Password"
+                        title="Minimum 6 characters at east 1 Aphabet and 1 number"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                        <!--    svg icon    -->
+                    </label>
+                </div>
+                <div class="text-field">
+                    <label for="confirm-password">Confirm Password:
+                        <input id="confirm-password" type="password" name="password" placeholder="Confirm Password"
+                        title="Minimum 6 characters at east 1 Aphabet and 1 number"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                        <!--    svg icon    -->
+                    </label>
+                </div>
+
+                <!--BOTÃO DE LOGIN-->
+                <button class="my-form__button" type="submit">Sign up</button>
+
+                <div class="my-form__actions">
+                    <div class="my-form__row">
+                        <span>Did you forget your password?</span>
+                        <a href="#" title="Reset Password">Reset Password</a>
+                    </div>
+                    <div class="my-form__signup">
+                        <a href="#" title="Login">Login</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="info-side">
+            <img src="images/mock.png" alt="Mock" class="mockup" />
+            <div class="welcome-message">
+                <h2>Navitron Maps! 👋</h2>
+                <p>
+                    Your ultimate guide to navigation the world
+                    and discovering new places with ease.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>   
+</body>
+</html>
