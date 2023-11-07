@@ -10,7 +10,7 @@ signupForm.addEventListener("submit", (e) => {
     console.log("Password", password.value);
 });
 
-function onChange {
+function onChange () {
     if(confirmPassword.value === password.value) {
         confirmPassword.setCustomValidity("");
     } else {
