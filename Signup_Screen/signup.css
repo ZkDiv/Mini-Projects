@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 :root {
-    --primary: #4978f0;
+    --primary: #4978f0
+    ;
     --primary-light: #E1EEF5;
     --secondary: #1D1D1D;
     --background: #F4F1FF;
     --text: #1F2346;
+    --terciary: #28665b ;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 
 .socials-row {
     display: flex;
-    gap: 16rem;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
@@ -105,7 +107,7 @@ body {
 }
 
 .info-side img {
-    max-width: 860px;
+    max-width: 450px;
 }
 
 .welcome-message {
@@ -119,14 +121,14 @@ body {
     left: 20px;
 }
 
-my-form {
+.my-form {
     display: flex;
     flex-direction: column;
     justify-content: start;
     position: relative;
     gap: 16px;
     max-width: 460px;
-    width: 100px;
+    width: 100%;
     padding: 48px 32px;
     height: fit-content;
     box-shadow: 

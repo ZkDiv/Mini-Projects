@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Example</title>
     <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
-    <div>
-        <div>
+    <div class="form-wrapper">
+        <div class="form-side">
             <a href="#" title="logo"><img class="logo" src="images/logo.png" alt="Logo"></a>        
             <form class="my-form">
                 <div class="login-welcome-row"><h1>Create your account &#x1F44F;</h1></div>
@@ -30,25 +29,24 @@
 
                 <!--INPUTS DE EMAIL E SENHA-->
                 <div class="text-field">
-                    <label>
+                    <label for="email">Email
                         <input type="email" id="email" name="email" autocomplete="off" placeholder="Your Email"
-                        required>
-                        <!--    svg icon    -->
+                            required>
                     </label>
                 </div>
                 <div class="text-field">
                     <label for="password">Password:
                         <input id="password" type="password" name="password" placeholder="Your Password"
-                        title="Minimum 6 characters at east 1 Aphabet and 1 number"
-                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                            title="Minimum 6 characters at east 1 Aphabet and 1 number"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
                         <!--    svg icon    -->
                     </label>
                 </div>
                 <div class="text-field">
                     <label for="confirm-password">Confirm Password:
-                        <input id="confirm-password" type="password" name="password" placeholder="Confirm Password"
-                        title="Minimum 6 characters at east 1 Aphabet and 1 number"
-                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                        <input id="confirm-password" type="password" name="password" placeholder="Repeat Password"
+                            title="Minimum 6 characters at east 1 Aphabet and 1 number"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
                         <!--    svg icon    -->
                     </label>
                 </div>
@@ -56,6 +54,7 @@
                 <!--BOTÃO DE LOGIN-->
                 <button class="my-form__button" type="submit">Sign up</button>
 
+                <!--    ESQUECI MINHA SENHA    -->
                 <div class="my-form__actions">
                     <div class="my-form__row">
                         <span>Did you forget your password?</span>
