@@ -7,7 +7,7 @@ signupForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     console.log("Email:", email.value);
-    console.log("Password", password.value);
+    console.log("Password:", password.value);
 });
 
 function onChange () {

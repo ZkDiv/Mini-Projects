@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 :root {
-    --primary: #4978f0
-    ;
+    --primary: #4978f0;
     --primary-light: #E1EEF5;
     --secondary: #1D1D1D;
     --background: #F4F1FF;
@@ -17,7 +16,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: Mulish;
 }
 
@@ -28,6 +27,11 @@ body {
 }
 
 .socials-row img {
+    width: 24px;
+    height: 24px;
+}
+
+.text-field img {
     width: 24px;
     height: 24px;
 }
@@ -83,7 +87,7 @@ body {
 }
 
 .info-side {
-    height: 100vh;
+    height: 130vh;
     padding: 148px 48px 48px 32px;
     color: #401B3D;
     display: flex;
@@ -107,7 +111,7 @@ body {
 }
 
 .info-side img {
-    max-width: 450px;
+    max-width: 500px;
 }
 
 .welcome-message {
