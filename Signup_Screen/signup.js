@@ -18,5 +18,16 @@ function onChange () {
     }
 }
 
+$(document).ready(function(){
+    $('.info-side .carousel').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: false,
+    });
+});
+
 password.addEventListener("change", onChange);
 confirmPassword.addEventListener("change", onChange);

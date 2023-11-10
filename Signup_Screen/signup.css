@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
 :root {
-    --primary: #4978f0
-    ;
+    --primary: #4978f0;
     --primary-light: #E1EEF5;
     --secondary: #1D1D1D;
     --background: #F4F1FF;
@@ -83,11 +82,12 @@ body {
 }
 
 .info-side {
-    height: 100vh;
-    padding: 148px 48px 48px 32px;
+    position: relative;
+    height: auto;
+    padding: 5px 150px 5px 150px;
     color: #401B3D;
-    display: flex;
-    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -106,12 +106,20 @@ body {
     font-size: 1.2rem;
 }
 
-.info-side img {
-    max-width: 450px;
+.info-side .carousel {
+    width: 565px;
+    height: 500px;
+    margin-bottom: 90px;
 }
 
-.welcome-message {
-    max-width: 360px;
+.info-side .carousel .mockup {
+    max-width: 565px;
+    max-height: 670px;
+}
+
+.info-side .welcome-message {
+    max-width: 565px;
+    text-align: center;
 }
 
 .logo {
@@ -272,7 +280,7 @@ body {
     }
 
     .info-side {
-        flex-direction: column-reverse;
+        flex-direction: column;
         padding: 48px 48px 48px 32px;
     }
 }
